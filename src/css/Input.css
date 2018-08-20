@@ -1,0 +1,23 @@
+/* .week6 .label, .week6 .input{ */
+  /* display: block; */
+/* } */
+
+.week6 .input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+}
+.week6 .input:focus{
+  outline: none;
+}
+
+.week6 .btn{
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px 0px;
+}
+.week6 .btn:focus{
+  outline: none;
+}

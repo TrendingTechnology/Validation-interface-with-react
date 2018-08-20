@@ -1,0 +1,21 @@
+.week6 .cust-select{
+  -webkit-appearance:none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.week6 .cust-select:focus{
+  outline: none;
+}
+.week6 .cust-select:required:invalid {
+  color: gray;
+}
+.week6 .cust-select option[value=""][disabled] {
+  display: none;
+}
+.week6 .cust-select option {
+  color: black;
+}
