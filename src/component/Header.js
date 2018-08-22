@@ -6,10 +6,10 @@ class Header extends React.Component{
         return (
             <div className="titlewrap">
                 <div className="title">
-                    {props.title}
+                    {this.props.title}
                 </div>
                 <div className="subtitle">
-                    {props.subtitle}
+                    {this.props.subtitle}
                 </div>
             </div>
         );

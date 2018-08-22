@@ -6,10 +6,10 @@ class Input extends React.Component{
     return (
           <input
               className="input"
-              type={props.type ? props.type : 'text'}
-              id={props.id}
-              name={props.id}
-              placeholder={props.placeholder}
+              type={this.props.type ? this.props.type : 'text'}
+              id={this.props.id}
+              name={this.props.id}
+              placeholder={this.props.placeholder}
           />
       );
   }

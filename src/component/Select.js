@@ -3,16 +3,16 @@ import '../css/Select.css';
 
 class Select extends React.Component{
   render() {
-    const options = [<option value="" disabled selected >{props.placeholder}</option>];
-    for (let i = props.start; i <= props.end; i++) {
+    const options = [<option value="" disabled selected >{this.props.placeholder}</option>];
+    for (let i = this.props.start; i <= this.props.end; i++) {
       options.push(<option value={i}>{i}</option>);
     }
 
     return (
         <select required
                 className="cust-select"
-                id={props.id}
-                name={props.id}
+                id={this.props.id}
+                name={this.props.id}
         >
             {options}
         </select>
