@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Row, Col, Form } from 'reactstrap';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faCheck } from '@fortawesome/fontawesome-free-solid';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import Header from './Header';
 import Input from './Input';
 import Select from './Select';

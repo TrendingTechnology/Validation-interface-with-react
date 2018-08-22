@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Col } from 'reactstrap';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faCheck, faImages } from '@fortawesome/fontawesome-free-solid';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faImages } from '@fortawesome/free-solid-svg-icons';
 import Header from './Header';
 
 import '../style/Stage3.css';

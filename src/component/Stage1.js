@@ -31,16 +31,16 @@ function Stage1() {
             id={'Account'}
             placeholder={'example@email.com'}
           />
-          <label for="password" >password</label>
+          <label for="password" >Password</label>
           <Input
             type={'password'}
             id={'Password'}
             placeholder={'●●●●●●●●'}
           />
-          <label for="Comfirm Password" >Comfirm Password</label>
+          <label for="Comfirm Password" >Confirm Password</label>
           <Input
             type={'password'}
-            id={'Comfirm Password'}
+            id={'Confirm Password'}
             placeholder={'●●●●●●●●'}
           />
           <Link to="/week6/stage2">
