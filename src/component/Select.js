@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Select.css';
+import '../css/Select.css';
 
 function Select(props) {
   const options = [<option value="" disabled selected >{props.placeholder}</option>];
