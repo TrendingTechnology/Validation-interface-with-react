@@ -8,7 +8,7 @@ class Complete extends React.Component{
   render() {
       return (
           <div>
-              <Col sm={{size: 6, offset: 3}} style={{borderTop: '4px solid #007bff', textAlign: 'center'}}>
+              <Col sm={{size: 6, offset: 3}} style={{textAlign: 'center'}}>
                   <div className="stepbar">
                       <div className="barwrap">
                           <div className="bar active"/>

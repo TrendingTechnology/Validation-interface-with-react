@@ -1,5 +1,9 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch,
+    Link } from 'react-router-dom';
 import { Container, Button, Col } from 'reactstrap';
 
 import Stage1 from './component/Stage1';
@@ -13,38 +17,46 @@ import './css/style.css';
 class App extends React.Component {
     render() {
         return (
-            <div className="app" style={{backgroundColor: '#fff'}}>
-                <Container style={{
-                    minHeight: `${window.innerHeight}px`,
-                }}
-                >
-                    <Route exact path="/app" render={() => (
-                        <Col sm={{size: 6, offset: 3}} style={{borderTop: '4px solid #007bff'}}>
-                            <div className="stepbar">
-                                <div className="barwrap">
-                                    <div className="bar"/>
-                                    <div className="bar"/>
-                                    <div className="bar"/>
+            <Router>
+                <div className="app" style={{backgroundColor: '#fff'}}>
+                    <Container style={{
+                        minHeight: `${window.innerHeight}px`,
+                    }}
+                    >
+                    <Switch>
+                        <Route exact path="/" render={() => (
+                            <Col sm={{size: 6, offset: 3}}>
+                                <div className="stepbar">
+                                    <div className="barwrap">
+                                        <div className="bar"/>
+                                        <div className="bar"/>
+                                        <div className="bar"/>
+                                    </div>
+                                    <div className="step"/>
+                                    <div className="step"/>
+                                    <div className="step"/>
+                                    <div className="step"/>
                                 </div>
-                                <div className="step"/>
-                                <div className="step"/>
-                                <div className="step"/>
-                                <div className="step"/>
-                            </div>
-                            <Header title={'Membership Sign up'} subtitle={'Click button to start'}/>
-                            <Link to="/app/stage1">
-                                <Button color="primary" block>Sign Up</Button>
-                            </Link>
-                        </Col>
-                    )}
-                    />
-                    <Route exact path="/app/stage1" component={Stage1}/>
-                    <Route exact path="/app/stage2" component={Stage2}/>
-                    <Route exact path="/app/stage3" component={Stage3}/>
-                    <Route exact path="/app/stage4" component={Stage4}/>
-                    <Route exact path="/app/complete" component={Complete}/>
-                </Container>
-            </div>
+                                <Header title={'Membership Sign up'} subtitle={'Click button to start'}/>
+                                <div className="btnBlock">
+                                    <Button color="primary" className="btnStyle" block>Log In</Button>
+                                    <a href="" target="_blank">Problem with log in?</a>
+                                    <Link to="/app/stage1">
+                                        <Button color="primary" className="btnStyle" block>Sign Up</Button>
+                                    </Link>
+                                </div>
+                            </Col>
+                        )}
+                        />
+                        <Route path="/app/stage1" component={Stage1}/>
+                        <Route path="/app/stage2" component={Stage2}/>
+                        <Route path="/app/stage3" component={Stage3}/>
+                        <Route path="/app/stage4" component={Stage4}/>
+                        <Route path="/app/complete" component={Complete}/>
+                    </Switch>
+                    </Container>
+                </div>
+            </Router>
         );
     }
 }

@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 import { Button, Col, Form } from 'reactstrap';
 import Header from './Header';
 import Input from './Input';
+import '../css/Stage1.css';
+import '../css/style.css';
 
 class Stage1 extends React.Component{
   render() {
       return (
           <div>
-              <Col sm={{size: 6, offset: 3}} style={{borderTop: '4px solid #007bff'}}>
+              <Col sm={{size: 8, offset: 3}}>
                   <div className="stepbar">
                       <div className="barwrap">
                           <div className="bar"/>
@@ -25,27 +27,27 @@ class Stage1 extends React.Component{
 
                   <Header title={'Create Account'} subtitle={'Glad to see you here!'}/>
 
-                  <Form>
-                      <label for="Account">Account</label>
+                  <Form className="step1Form">
+                      <label htmlFor="Account"> Account </label>
                       <Input
                           type={'email'}
                           id={'Account'}
                           placeholder={'example@email.com'}
                       />
-                      <label for="password">Password</label>
+                      <label htmlFor="password"> Password</label>
                       <Input
                           type={'password'}
                           id={'Password'}
                           placeholder={'●●●●●●●●'}
                       />
-                      <label for="Comfirm Password">Confirm Password</label>
+                      <label htmlFor="Confirm Password"> Confirm Password</label>
                       <Input
                           type={'password'}
                           id={'Confirm Password'}
                           placeholder={'●●●●●●●●'}
                       />
-                      <Link to="/week6/stage2">
-                          <Button color="primary" block>SUBMIT & NEXT</Button>
+                      <Link to="/app/stage2">
+                          <Button color="primary" className="btnStyle" block> SUBMIT </Button>
                       </Link>
                   </Form>
               </Col>

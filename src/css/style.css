@@ -1,8 +1,15 @@
-.week6 * {
+.app * {
   font-family: 'Roboto', sans-serif;
 }
 
-.week6 .stepbar{
+.app {
+  border-radius: 15px;
+  height: 650px;
+  width: 40%;
+  margin: 5% 30% 20% 30%;
+}
+
+.app .stepbar{
   width: 250px;
   margin: 0 auto;
   padding: 30px 0px;
@@ -11,19 +18,19 @@
   justify-content: space-between;
 }
 
-.week6 .barwrap{
+.app .barwrap{
   position: absolute;
   width: 250px;
   display: flex;
   align-items: center;
 }
 
-.week6 .bar{
+.app .bar{
   flex: 1;
   border: 2px solid #BEE1FF;
 }
 
-.week6 .step{
+.app .step{
   width: 16px;
   height: 16px;
   border: 2px solid #BEE1FF;
@@ -35,16 +42,43 @@
   justify-content: center;
 }
 
-.week6 .instep{
+.app .instep{
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #007bff;
 }
 
-.week6 .active{
+.app .active{
   border-color: #007bff;
 }
-.week6 .done{
+.app .done{
   background-color: #007bff;
+}
+
+.btnBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btnBlock a {
+  font-style: normal;
+  color: black;
+}
+
+.btnBlock a:hover {
+  font-style: italic;
+  color: darkred;
+}
+
+.btnStyle {
+  font-family: 'Roboto', sans-serif;
+  width: 140px;
+  border-radius: 5px;
+  border: 3px solid #9b9b9b;
+  color: #ffffff;
+  background-color: rgba(51, 25, 26, 0.91);
 }

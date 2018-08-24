@@ -1,4 +1,4 @@
-.week6 .cust-select{
+.app .cust-select{
   -webkit-appearance:none;
   width: 100%;
   padding: 10px;
@@ -7,15 +7,15 @@
   margin-bottom: 20px;
   background-color: #fff;
 }
-.week6 .cust-select:focus{
+.app .cust-select:focus{
   outline: none;
 }
-.week6 .cust-select:required:invalid {
+.app .cust-select:required:invalid {
   color: gray;
 }
-.week6 .cust-select option[value=""][disabled] {
+.app .cust-select option[value=""][disabled] {
   display: none;
 }
-.week6 .cust-select option {
+.app .cust-select option {
   color: black;
 }

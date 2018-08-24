@@ -6,12 +6,13 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import Header from './Header';
 import Input from './Input';
 import Select from './Select';
+import '../css/style.css';
 
 class Stage2 extends React.Component{
   render() {
       return (
           <div>
-              <Col sm={{size: 6, offset: 3}} style={{borderTop: '4px solid #007bff'}}>
+              <Col sm={{size: 6, offset: 3}}>
                   <div className="stepbar">
                       <div className="barwrap">
                           <div className="bar active"/>
@@ -33,7 +34,7 @@ class Stage2 extends React.Component{
                   <Form>
                       <Row>
                           <Col sm="6">
-                              <label for="name">Name (optional)</label>
+                              <label htmlFor="name">Name (optional)</label>
                               <Input
                                   type={'text'}
                                   id={'name'}
@@ -41,7 +42,7 @@ class Stage2 extends React.Component{
                               />
                           </Col>
                           <Col sm="6">
-                              <label for="phone">Phone*</label>
+                              <label htmlFor="phone">Phone*</label>
                               <Input
                                   type={'text'}
                                   id={'phone'}
@@ -50,7 +51,7 @@ class Stage2 extends React.Component{
                           </Col>
                       </Row>
 
-                      <label for="birth">Birth Date (optional)</label>
+                      <label htmlFor="birth">Birth Date (optional)</label>
                       <Row>
                           <Col sm="4">
                               <Select
@@ -78,7 +79,7 @@ class Stage2 extends React.Component{
                           </Col>
                       </Row>
 
-                      <label for="address">Address</label>
+                      <label htmlFor="address">Address</label>
                       <Row>
                           <Col sm="6">
                               <Input
@@ -105,7 +106,7 @@ class Stage2 extends React.Component{
                           </Col>
                       </Row>
 
-                      <Link to="/week6/stage3">
+                      <Link to="/app/stage3">
                           <Button color="primary" block>SUBMIT & NEXT</Button>
                       </Link>
                   </Form>

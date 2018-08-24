@@ -6,12 +6,13 @@ import { faCheck, faImages } from '@fortawesome/free-solid-svg-icons';
 import Header from './Header';
 
 import '../css/Stage3.css';
+import '../css/style.css';
 
 class Stage3 extends React.Component{
   render() {
       return (
           <div>
-              <Col sm={{size: 6, offset: 3}} style={{borderTop: '4px solid #007bff'}}>
+              <Col sm={{size: 6, offset: 3}}>
                   <div className="stepbar">
                       <div className="barwrap">
                           <div className="bar active"/>
@@ -41,7 +42,7 @@ class Stage3 extends React.Component{
                       </div>
                   </div>
 
-                  <Link to="/week6/stage4">
+                  <Link to="/app/stage4">
                       <Button color="primary" block>SUBMIT & NEXT</Button>
                   </Link>
               </Col>

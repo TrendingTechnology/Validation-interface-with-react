@@ -11,7 +11,7 @@ class Stage4 extends React.Component{
   render() {
       return (
           <div>
-              <Col sm={{size: 6, offset: 3}} style={{borderTop: '4px solid #007bff'}}>
+              <Col sm={{size: 6, offset: 3}}>
                   <div className="stepbar">
                       <div className="barwrap">
                           <div className="bar active"/>
@@ -37,7 +37,7 @@ class Stage4 extends React.Component{
                   <Form>
                       <Row>
                           <Col sm="12">
-                              <label for="card-number">Card Number</label>
+                              <label htmlFor="card-number">Card Number</label>
                               <Input
                                   type={'number'}
                                   id={'card-number'}
@@ -48,7 +48,7 @@ class Stage4 extends React.Component{
 
                       <Row>
                           <Col sm="6">
-                              <label for="card-name">Cardholder</label>
+                              <label htmlFor="card-name">Cardholder</label>
                               <Input
                                   type={'text'}
                                   id={'card-name'}
@@ -56,7 +56,7 @@ class Stage4 extends React.Component{
                               />
                           </Col>
                           <Col sm="6">
-                              <label for="bank-name">Bank</label>
+                              <label htmlFor="bank-name">Bank</label>
                               <Input
                                   type={'text'}
                                   id={'bank-name'}
@@ -67,7 +67,7 @@ class Stage4 extends React.Component{
 
                       <Row>
                           <Col sm="4">
-                              <label for="cvv">CVV</label>
+                              <label htmlFor="cvv">CVV</label>
                               <Input
                                   type={'text'}
                                   id={'cvv'}
@@ -75,7 +75,7 @@ class Stage4 extends React.Component{
                               />
                           </Col>
                           <Col sm="4">
-                              <label for="expire-date-year">Expired Date</label>
+                              <label htmlFor="expire-date-year">Expired Date</label>
                               <Select
                                   id={'expire-date-year'}
                                   start={2018}
@@ -84,7 +84,7 @@ class Stage4 extends React.Component{
                               />
                           </Col>
                           <Col sm="4">
-                              <label for="expire-date-year" style={{opacity: 0}}>Expired Date</label>
+                              <label htmlFor="expire-date-year" style={{opacity: 0}}>Expired Date</label>
                               <Select
                                   id={'expire-date-month'}
                                   start={1}
@@ -94,7 +94,7 @@ class Stage4 extends React.Component{
                           </Col>
                       </Row>
 
-                      <Link to="/week6/complete">
+                      <Link to="/app/complete">
                           <Button color="primary" block>DONE</Button>
                       </Link>
                   </Form>
