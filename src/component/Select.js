@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../css/Select.css';
 
-class Select extends React.Component{
+class Select extends Component{
   render() {
     const options = [<option value="" disabled selected >{this.props.placeholder}</option>];
     for (let i = this.props.start; i <= this.props.end; i++) {
@@ -10,7 +10,7 @@ class Select extends React.Component{
 
     return (
         <select required
-                className="cust-select"
+                className="option-select"
                 id={this.props.id}
                 name={this.props.id}
         >

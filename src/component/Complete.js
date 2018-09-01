@@ -9,8 +9,8 @@ class Complete extends React.Component{
       return (
           <div>
               <Col sm={{size: 6, offset: 3}} style={{textAlign: 'center'}}>
-                  <div className="stepbar">
-                      <div className="barwrap">
+                  <div className="step-bar">
+                      <div className="bar-wrap">
                           <div className="bar active"/>
                           <div className="bar active"/>
                           <div className="bar active"/>

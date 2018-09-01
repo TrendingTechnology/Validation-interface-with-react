@@ -1,107 +1,99 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button, Row, Col, Form } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
+import {Button, Col, Form, FormGroup, Label, Input} from 'reactstrap';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCheck} from '@fortawesome/free-solid-svg-icons';
 import Header from './Header';
-import Input from './Input';
-import Select from './Select';
+// import '../css/style.css';
+import '../css/Stage4.css';
+// import Input from './Input';
+// import Select from './Select';
 
-class Stage4 extends React.Component{
-  render() {
-      return (
-          <div>
-              <Col sm={{size: 6, offset: 3}}>
-                  <div className="stepbar">
-                      <div className="barwrap">
-                          <div className="bar active"/>
-                          <div className="bar active"/>
-                          <div className="bar active"/>
-                      </div>
-                      <div className="step active done">
-                          <FontAwesomeIcon icon={faCheck} color="#fff" size="xs"/>
-                      </div>
-                      <div className="step active done">
-                          <FontAwesomeIcon icon={faCheck} color="#fff" size="xs"/>
-                      </div>
-                      <div className="step active done">
-                          <FontAwesomeIcon icon={faCheck} color="#fff" size="xs"/>
-                      </div>
-                      <div className="step active">
-                          <div className="instep"/>
-                      </div>
-                  </div>
+class Stage4 extends Component {
+    render() {
+        return (
+            <div>
+                <Col sm={{size: 6, offset: 3}}>
+                    <div className="step-bar">
+                        <div className="bar-wrap">
+                            <div className="bar active"/>
+                            <div className="bar active"/>
+                            <div className="bar active"/>
+                        </div>
+                        <div className="step active done">
+                            <FontAwesomeIcon icon={faCheck} color="#fff" size="xs"/>
+                        </div>
+                        <div className="step active done">
+                            <FontAwesomeIcon icon={faCheck} color="#fff" size="xs"/>
+                        </div>
+                        <div className="step active done">
+                            <FontAwesomeIcon icon={faCheck} color="#fff" size="xs"/>
+                        </div>
+                        <div className="step active">
+                            <div className="in-step"/>
+                        </div>
+                    </div>
+                </Col>
 
-                  <Header title={'Payment Method'} subtitle={'Add your credit card information!'}/>
+                <Header title={'Payment Method'} subtitle={'Add your credit card information!'}/>
 
-                  <Form>
-                      <Row>
-                          <Col sm="12">
-                              <label htmlFor="card-number">Card Number</label>
-                              <Input
-                                  type={'number'}
-                                  id={'card-number'}
-                                  placeholder={'1234 5678 9012 3456'}
-                              />
-                          </Col>
-                      </Row>
+                <Form className="step4-form">
+                    <FormGroup>
+                        <Label for="card-number">Card Number</Label>
+                        <Input
+                            type={'number'}
+                            id={'card-number'}
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="card-name">Cardholder</Label>
+                        <Input
+                            type={'text'}
+                            id={'card-name'}
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="bank-name">Bank name</Label>
+                        <Input
+                            type={'text'}
+                            id={'bank-name'}
+                        />
+                    </FormGroup>
 
-                      <Row>
-                          <Col sm="6">
-                              <label htmlFor="card-name">Cardholder</label>
-                              <Input
-                                  type={'text'}
-                                  id={'card-name'}
-                                  placeholder={'EXAMPLE NAME'}
-                              />
-                          </Col>
-                          <Col sm="6">
-                              <label htmlFor="bank-name">Bank</label>
-                              <Input
-                                  type={'text'}
-                                  id={'bank-name'}
-                                  placeholder={'EXAMPLE BANK'}
-                              />
-                          </Col>
-                      </Row>
-
-                      <Row>
-                          <Col sm="4">
-                              <label htmlFor="cvv">CVV</label>
-                              <Input
-                                  type={'text'}
-                                  id={'cvv'}
-                                  placeholder={'123'}
-                              />
-                          </Col>
-                          <Col sm="4">
-                              <label htmlFor="expire-date-year">Expired Date</label>
-                              <Select
-                                  id={'expire-date-year'}
-                                  start={2018}
-                                  end={2030}
-                                  placeholder={'YYYY'}
-                              />
-                          </Col>
-                          <Col sm="4">
-                              <label htmlFor="expire-date-year" style={{opacity: 0}}>Expired Date</label>
-                              <Select
-                                  id={'expire-date-month'}
-                                  start={1}
-                                  end={12}
-                                  placeholder={'MM'}
-                              />
-                          </Col>
-                      </Row>
-
-                      <Link to="/app/complete">
-                          <Button color="primary" block>DONE</Button>
-                      </Link>
-                  </Form>
-              </Col>
-          </div>
-      );
-  }
+                    <FormGroup>
+                        <Label for="cvv">CVV</Label>
+                        <Input
+                            type={'text'}
+                            id={'cvv'}
+                            placeholder={'123'}
+                        />
+                    </FormGroup>
+                    <FormGroup className="expired-date-form">
+                        <Label for="expire-date-month">Expired Date</Label>
+                        <Input
+                            type={'text'}
+                            id={'expire-date-month'}
+                            placeholder={'MM'}
+                        />
+                        <Input
+                            type={'text'}
+                            id={'expire-date-year'}
+                            placeholder={'YY'}
+                        />
+                    </FormGroup>
+                </Form>
+                <div className="btn-block">
+                    <Link to="/app/complete">
+                        <Button color="primary" block>Done</Button>
+                    </Link>
+                    <Link to="/app/stage3">
+                        <Button color="primary" block>Back</Button>
+                    </Link>
+                </div>
+            </div>
+        )
+            ;
+    }
 }
 
 export default Stage4;

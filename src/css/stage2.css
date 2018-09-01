@@ -1,0 +1,54 @@
+.step2-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: auto 4% auto 20%;
+    height: auto;
+}
+
+.step2-form label, .name-form label, .birthday-form label, .address-form label {
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.step2-form input, .name-form input, .birthday-form input, .address-form input{
+    border: 2px solid;
+    border-radius: 5px;
+    height: 18px;
+    padding: 1%;
+    margin: 1% auto 1% auto;
+}
+
+.name-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    margin: auto 4% auto 20%;
+}
+
+#firstName, #middleName, #lastName {
+    width: 140px;
+}
+
+.birthday-form {
+    display: inline-block;
+    margin: auto 4% auto 20%;
+}
+
+.birthday-form input {
+    width: 100px;
+}
+
+.address-form {
+    display: block;
+    margin: auto 4% 8px 20%;
+}
+
+#ad-detail {
+    width: 70%;
+}

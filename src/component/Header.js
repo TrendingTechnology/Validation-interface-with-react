@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../css/Header.css';
 
-class Header extends React.Component{
+class Header extends Component{
     render() {
         return (
-            <div className="titlewrap">
+            <div className="title-wrap">
                 <div className="title">
                     {this.props.title}
                 </div>

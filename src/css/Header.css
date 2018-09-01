@@ -1,11 +1,16 @@
-.app .titlewrap{
-  margin-bottom: 30px;
+.app .title-wrap {
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
-.app .title{
-  font-size: 48px;
-  text-align: center;
+
+.app .title {
+    font-size: 38px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
-.app .subtitle{
-  font-size: 24px;
-  text-align: center;
+
+.app .subtitle {
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
 }

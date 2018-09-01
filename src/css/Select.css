@@ -1,21 +1,21 @@
-.app .cust-select{
+.app .option-select{
   -webkit-appearance:none;
-  width: 100%;
-  padding: 10px;
+  width: 50px;
+  padding: 5px;
   border-radius: 8px;
   border: 2px solid #000;
-  margin-bottom: 20px;
+  margin: auto 2px auto 2px;
   background-color: #fff;
 }
-.app .cust-select:focus{
+.app .option-select:focus{
   outline: none;
 }
-.app .cust-select:required:invalid {
+.app .option-select:required:invalid {
   color: gray;
 }
-.app .cust-select option[value=""][disabled] {
+.app .option-select option[value=""][disabled] {
   display: none;
 }
-.app .cust-select option {
+.app .option-select option {
   color: black;
 }
