@@ -32,10 +32,10 @@ class Login extends React.Component {
                                 placeholder={'●●●●●●●●'}
                             />
                         </Row>
-                        <Row>
+                        <Row className="login-btn">
                             <Col sm={{size: 'auto', offset: 2}}>
                                 <Link to="/">
-                                    <Button color="primary" className="login-btn">Login</Button>
+                                    <Button color="primary">Login</Button>
                                 </Link>
                             </Col>
                         </Row>

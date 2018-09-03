@@ -83,10 +83,10 @@ class Stage4 extends Component {
                     </FormGroup>
                 </Form>
                 <div className="btn-block">
-                    <Link to="/app/complete">
+                    <Link to="/complete">
                         <Button color="primary" block>Done</Button>
                     </Link>
-                    <Link to="/app/stage3">
+                    <Link to="/stage3">
                         <Button color="primary" block>Back</Button>
                     </Link>
                 </div>

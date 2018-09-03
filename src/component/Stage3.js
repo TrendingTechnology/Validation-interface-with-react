@@ -32,11 +32,11 @@ class Stage3 extends Component {
                     </div>
                 </Col>
 
-                <Header title={'Update Your Photo'}/>
+                <Header title={'Upload Photo'}/>
 
                 <div className="img-upload">
                     <input type="file" id="img"/>
-                    <FontAwesomeIcon icon={faImages} size="3x" color="#9B9B9B"/>
+                    <FontAwesomeIcon icon={faImages} size="2x" color="#9B9B9B"/>
                     <div className="img-word">
                         <span>UPLOAD UP TO 3 PHOTOS</span>
                         <div><br/></div>
@@ -44,10 +44,10 @@ class Stage3 extends Component {
                     </div>
                 </div>
                 <div className="btn-block">
-                    <Link to="/app/stage4">
+                    <Link to="/stage4">
                         <Button color="primary" block>Next</Button>
                     </Link>
-                    <Link to="/app/stage2">
+                    <Link to="/stage2">
                         <Button color="primary" block>Back</Button>
                     </Link>
                 </div>

@@ -3,20 +3,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    margin: 2% 4% 5% 25%;
-    height: 220px;
+    margin: 5% 4% 5% 20%;
+    height: 240px;
 }
 
 .step4-form label {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     margin-right: 5%;
 }
 
 .step4-form input {
     border: 2px solid;
     border-radius: 5px;
-    height: 22px;
+    height: 18px;
     width: auto;
     padding: 1%;
     margin: 1% auto 1% auto;

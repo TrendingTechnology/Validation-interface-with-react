@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    margin: auto 4% auto 20%;
+    margin: auto 4% auto 17%;
     height: auto;
 }
 
@@ -28,7 +28,7 @@
     flex-direction: row;
     justify-content: stretch;
     flex-wrap: wrap;
-    margin: auto 4% auto 20%;
+    margin: auto 4% auto 17%;
 }
 
 #firstName, #middleName, #lastName {
@@ -37,7 +37,7 @@
 
 .birthday-form {
     display: inline-block;
-    margin: auto 4% auto 20%;
+    margin: auto 4% auto 17%;
 }
 
 .birthday-form input {
@@ -46,7 +46,7 @@
 
 .address-form {
     display: block;
-    margin: auto 4% 8px 20%;
+    margin: auto 4% 8px 17%;
 }
 
 #ad-detail {

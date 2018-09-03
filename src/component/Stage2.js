@@ -29,7 +29,7 @@ class Stage2 extends Component {
                     <div className="step"/>
                 </div>
 
-                <Header title={'Personal Information'}/>
+                <Header title={'Personal Info'}/>
 
                 <Form className="name-form">
                     <FormGroup>
@@ -97,10 +97,10 @@ class Stage2 extends Component {
                     </FormGroup>
                 </Form>
                 <div className="btn-block">
-                    <Link to="/app/stage3">
+                    <Link to="/stage3">
                         <Button color="primary" block>Next</Button>
                     </Link>
-                    <Link to="/app/stage1">
+                    <Link to="/stage1">
                         <Button color="primary" block>Back</Button>
                     </Link>
                 </div>
