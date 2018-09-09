@@ -25,9 +25,9 @@ This page was built by using the following technologies:
 
 ## Task list
 
-- \[x] Page layout\
-- \[x] Styling form block\
+- \[x] Page layout
+- \[x] Styling form block
 - \[x] Practice React Router
-- \[ ] Make whole page responsive\
-- \[ ] Add validation into input form\
-- \[ ] Add more features on the page\
+- \[ ] Make whole page responsive
+- \[ ] Add validation into input form
+- \[ ] Add more features on the page

@@ -53,8 +53,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="587">
-                <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+              <first_editor relative-caret-position="387">
+                <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
               </first_editor>
               <second_editor />
             </state>
@@ -262,16 +262,15 @@
       <workItem from="1535957770024" duration="3907000" />
       <workItem from="1535998193860" duration="3273000" />
       <workItem from="1536117359201" duration="173000" />
-      <workItem from="1536456371961" duration="710000" />
+      <workItem from="1536456371961" duration="990000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62902000" />
+    <option name="totallyTimeSpent" value="63182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1756" y="-242" width="1440" height="919" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.26849896" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -281,7 +280,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32908162" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.24813896" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24813896" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -638,8 +637,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="587">
-            <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <first_editor relative-caret-position="387">
+            <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
           </first_editor>
           <second_editor />
         </state>
